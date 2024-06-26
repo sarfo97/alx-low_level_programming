@@ -1,21 +1,27 @@
-#include <ctype.h>
 #include "main.h"
 /**
- * _isalpha - returns 1 if char is letter
- * lowercase, or uppercase
+ * print_sign - prints the sign of a number
  *
- * @c: The character is in ASCII code
+ * @n: The integer to be evaluated
  *
- * Return: 1 for letter, lowercase, uppercase, 0 for rest
+ * Return: 1 if postive, 0 if zero, and -1
+ *if negative
  */
-int _isalpha(int c)
+int print_sign(int n)
 {
-	if (isalpha(c))
+	if (n > 0)
 	{
+		_putchar(43);
 		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar(48);
+		return (0);
 	}
 	else
 	{
-		return (0);
+		_putchar(45);
+		return (-1);
 	}
 }
