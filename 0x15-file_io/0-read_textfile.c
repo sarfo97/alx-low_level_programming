@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * read_textfile - reads a textfile and prints 
+ * read_textfile - reads a textfile and prints to
  * to POSIX stdout
  * @filename: file name to print into
  * @letters: letters to write
@@ -40,4 +40,3 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	free(buffer);
 	return (write_var);
 }
-
